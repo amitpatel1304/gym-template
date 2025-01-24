@@ -1,0 +1,135 @@
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero.image1 {
+    background-image: url('./img/hero-bg.jpg');
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-animated {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: red; /* Text color */
+    background-color: white; /* Background color */
+    border: none; /* Remove default border */
+    border-radius: 5px;
+    text-decoration: none;
+    overflow: hidden; /* Hide overflow for pseudo-elements */
+}
+
+.btn-animated::before,
+.btn-animated::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white; /* Border color */
+    transition: all 2s ease; /* Smooth transition for all properties */
+    z-index: 0; /* Behind the text */
+}
+
+.btn-animated::before {
+    top: 0;
+    left: 0;
+    transform: scaleX(0); /* Start with no width */
+    transform-origin: left; /* Animate from the left */
+}
+
+.btn-animated::after {
+    bottom: 0;
+    right: 0;
+    transform: scaleY(0); /* Start with no height */
+    transform-origin: bottom; /* Animate from the bottom */
+}
+
+.btn-animated:hover::before {
+    transform: scaleX(1); /* Expand to full width */
+}
+
+.btn-animated:hover::after {
+    transform: scaleY(1); /* Expand to full height */
+}
+
+.btn-animated:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #007bff; /* Change background color on hover */
+    z-index: 1; /* Bring text above the border */
+}
+
+.about-images {
+    position: relative;
+    height: 300px; /* Set a fixed height for the collage */
+    overflow: hidden; /* Hide overflow for collage effect */
+}
+
+.about-image {
+    position: absolute;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: Add border radius */
+}
+
+.about-image:nth-child(1) {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.about-image:nth-child(2) {
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.about-image:nth-child(3) {
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+}
+
+.about-image:nth-child(4) {
+    top: 60px;
+    left: 60px;
+    z-index: 4;
+}
+
+.about-image:hover {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+.gallery-item {
+    margin-bottom: 15px; /* Space between images */
+    border-radius: 5px;
+    overflow: hidden; /* Hide overflow for hover effect */
+    position: relative; /* Position for hover effect */
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
