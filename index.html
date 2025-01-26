@@ -7,6 +7,8 @@
     <title>Pulse Fitness</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,7 +43,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero text-white text-center">
+    <header class="hero text-white text-center" data-aos="fade-in">
         <div class="overlay"></div>
         <div class="container position-relative">
             <h1 class="display-4 font-weight-bold">Welcome to Pulse Fitness</h1>
@@ -51,7 +53,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center">About Us</h2><br>
             <div class="row">
@@ -70,11 +72,11 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
+    <section id="services" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center">Our Services</h2><br>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-user-friends"></i> Personal Training</h5>
@@ -86,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-users"></i> Group Classes</h5>
@@ -98,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-apple-alt"></i> Nutrition Coaching</h5>
@@ -115,7 +117,7 @@
     </section>
 
     <!-- Membership Plans Section -->
-    <section id="membership" class="py-5">
+    <section id="membership" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-light">Membership Plans</h2><br>
             <div class="row">
@@ -172,67 +174,67 @@
         </div>
     </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center">What Our Members Say</h2><br>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card testimonial-card shadow-sm">
-                    <div class="card-body text-center">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">Pulse Fitness changed my life!</p>
-                            <p>-- John Doe</p>
-                        </blockquote>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-light py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center">What Our Members Say</h2><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card testimonial-card shadow-sm">
+                        <div class="card-body text-center">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">Pulse Fitness changed my life!</p>
+                                <p>-- John Doe</p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card testimonial-card shadow-sm">
-                    <div class="card-body text-center">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">The trainers very supportive.</p>
-                            <p>-- Jane Smith</p>
-                        </blockquote>
+                <div class="col-md-4">
+                    <div class="card testimonial-card shadow-sm">
+                        <div class="card-body text-center">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">The trainers are very supportive.</p>
+                                <p>-- Jane Smith</p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card testimonial-card shadow-sm">
-                    <div class="card-body text-center">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">I love the group classes!</p>
-                            <p>-- Emily Johnson</p>
-                        </blockquote>
+                <div class="col-md-4">
+                    <div class="card testimonial-card shadow-sm">
+                        <div class="card-body text-center">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">I love the group classes!</p>
+                                <p>-- Emily Johnson</p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Our Team Section -->
-    <section id="team" class="py-5">
+    <section id="team" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-light">Our Trainers</h2><br>
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center" data-aos="fade-right">
                     <img src="./img/team1.jpg" alt="Team Member 1" class="rounded-circle img-fluid mb-3"
                         style="width: 250px; height: 250px;">
-                    <h5 style="color: greenyellow;">John Doe</h5>
-                    <p style="color: greenyellow;">Personal Trainer</p>
+                    <h5 style="color: white;">John Doe</h5>
+                    <p style="color: white;">Personal Trainer</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center" data-aos="fade-up">
                     <img src="./img/team2.jpg" alt="Team Member 2" class="rounded-circle img-fluid mb-3"
                         style="width: 250px; height: 250px;">
-                    <h5 style="color: greenyellow;">Jane Smith</h5>
-                    <p style="color: greenyellow;">Group Class Instructor</p>
+                    <h5 style="color: white;">Jane Smith</h5>
+                    <p style="color: white;">Group Class Instructor</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center" data-aos="fade-left">
                     <img src="./img/team3.jpg" alt="Team Member 3" class="rounded-circle img-fluid mb-3"
                         style="width: 250px; height: 250px;">
-                    <h5 style="color: greenyellow;">Emily Johnson</h5>
-                    <p style="color: greenyellow;">Nutrition Coach</p>
+                    <h5 style="color: white;">Emily Johnson</h5>
+                    <p style="color: white;">Nutrition Coach</p>
                 </div>
             </div>
         </div>
@@ -344,6 +346,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
 </body>
 
 </html>
