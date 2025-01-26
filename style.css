@@ -206,6 +206,6 @@ blockquote footer {
     }
 
     .modal-dialog {
-        max-width: 100%; /* Full width on mobile */
+        max-width: 70%; /* Full width on mobile */
     }
 }
