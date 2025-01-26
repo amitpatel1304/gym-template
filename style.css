@@ -145,6 +145,12 @@ blockquote footer {
     color: greenyellow; /* Blue color for the footer */
 }
 
+
+.modal-dialog {
+    max-width: 90%; /* Set max width for mobile */
+    margin: 1.75rem auto; /* Center the modal */
+}
+
 .modal-img {
     width: 100%;
     height: auto;
