@@ -74,7 +74,7 @@ body {
     z-index: 1; /* Bring text above the border */
 }
 
-h2,h5{
+h2,h3,h5{
     font-weight: bold;
 }
 
@@ -163,14 +163,14 @@ blockquote footer {
     right: 20px;
     bottom: 20px;
     z-index: 1000; /* Ensure it is above other content */
+    padding: 15px 20px; /* Increase padding for better touch target */
+    font-size: 1.2rem; /* Increase font size */
+    border-radius: 50px; /* Rounded button */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
-.floating-button i {
-    margin-right: 8px; /* Space between icon and text */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.floating-button:hover{
+.floating-button:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light background on hover */
     color: red;
     font-weight: bold;
 }
@@ -179,6 +179,16 @@ blockquote footer {
     transform: translateX(5px); /* Move the icon slightly to the right on hover */
     color: red;
     font-weight: bold;
+}
+
+.modal-dialog {
+    max-width: 90%; /* Set max width for mobile */
+    margin: 1.75rem auto; /* Center the modal */
+}
+
+.modal-img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .team-member img {
@@ -191,4 +201,26 @@ blockquote footer {
 
 .team-member:hover img {
     transform: scale(1.1);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .floating-button {
+        right: 18%; /* Adjust position for smaller screens */
+        bottom: 10px; /* Adjust position for smaller screens */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .modal-dialog {
+        max-width: 100%; /* Full width on mobile */
+    }
 }
