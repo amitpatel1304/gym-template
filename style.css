@@ -4,7 +4,7 @@ body {
 }
 
 .hero {
-    background-image: url('./img/hero-bg.jpg') no-repeat center center;;
+    background-image: url('./img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -201,7 +201,7 @@ blockquote footer {
     .card {
         margin-bottom: 20px; /* Add margin for better spacing between cards */
     }
-    
+
     .modal-dialog {
         max-width: 100%; /* Full width on mobile */
     }
