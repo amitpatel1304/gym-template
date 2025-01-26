@@ -147,6 +147,7 @@ blockquote footer {
 
 
 .modal-dialog {
+    max-width: 90%; /* Set max width for mobile */
     margin: 1.75rem auto; /* Center the modal */
 }
 
@@ -189,7 +190,7 @@ blockquote footer {
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .floating-button {
-        
+        right: 18%; /* Adjust position for smaller screens */
         bottom: 10px; /* Adjust position for smaller screens */
         font-size: 1rem; /* Adjust font size for smaller screens */
     }
@@ -211,6 +212,10 @@ blockquote footer {
         margin-bottom: 20px; /* Add margin for better spacing between cards */
     }
 
+    .modal-dialog {
+        max-width: 100%; /* Full width on mobile */
+    }
+
     .modal-body {
         flex-direction: column; /* Stack images vertically on mobile */
         flex-wrap: wrap;
@@ -219,5 +224,9 @@ blockquote footer {
     .modal-img {
         width: 100%; /* Full width for each image */
         margin: 5px 0; /* Vertical margin for spacing */
+    }
+
+    .modal-content{
+        width: 80%;
     }
 }
