@@ -1,5 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .hero {
@@ -74,7 +75,7 @@ body {
     z-index: 1; /* Bring text above the border */
 }
 
-h2,h3,h5{
+h2,h3,h5 {
     font-weight: bold;
 }
 
@@ -110,12 +111,6 @@ h2,h3,h5{
     border: 2px solid greenyellow; /* Optional: Add border on hover */
 }
 
-.card-title i {
-    margin-right: 10px; /* Space between icon and text */
-    color: greenyellow; /* Change icon color to match hover effect */
-    font-size: 1.5rem; /* Adjust icon size */
-}
-
 #team {
     background-color: #343a40; /* Dark background for the team section */
 }
@@ -133,8 +128,6 @@ footer {
     border-radius: 5px; /* Rounded corners */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
-
-
 
 blockquote {
     border-left: 5px solid greenyellow; /* Blue left border */
@@ -181,35 +174,12 @@ blockquote footer {
     font-weight: bold;
 }
 
-.modal-dialog {
-    max-width: 90%; /* Set max width for mobile */
-    margin: 1.75rem auto; /* Center the modal */
-}
-
-.modal-img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover img {
-    transform: scale(1.1);
-}
-
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .floating-button {
         right: 18%; /* Adjust position for smaller screens */
         bottom: 10px; /* Adjust position for smaller screens */
         font-size: 1rem; /* Adjust font size for smaller screens */
-        
     }
 
     .hero h1 {
